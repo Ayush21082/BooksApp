@@ -14,7 +14,33 @@
 		44DA76B2278752170003E8FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA76B1278752170003E8FC /* ContentView.swift */; };
 		44DA76B42787521C0003E8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DA76B32787521C0003E8FC /* Assets.xcassets */; };
 		44DA76B72787521C0003E8FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DA76B62787521C0003E8FC /* Preview Assets.xcassets */; };
+		44DA76BC278753EF0003E8FC /* BookApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449B614127856EEA009F4618 /* BookApps.framework */; };
+		44DA76BD278753EF0003E8FC /* BookApps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449B614127856EEA009F4618 /* BookApps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44DA76BE278753EF0003E8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449B613827856EEA009F4618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449B614027856EEA009F4618;
+			remoteInfo = BookApps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44DA76C0278753EF0003E8FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44DA76BD278753EF0003E8FC /* BookApps.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		449B614127856EEA009F4618 /* BookApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DA76BC278753EF0003E8FC /* BookApps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +79,7 @@
 				449B614327856EEA009F4618 /* BookApps */,
 				44DA76AE278752160003E8FC /* Book App Demo */,
 				449B614227856EEA009F4618 /* Products */,
+				44DA76BB278753EF0003E8FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +121,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		44DA76BB278753EF0003E8FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -132,10 +167,12 @@
 				44DA76A9278752160003E8FC /* Sources */,
 				44DA76AA278752160003E8FC /* Frameworks */,
 				44DA76AB278752160003E8FC /* Resources */,
+				44DA76C0278753EF0003E8FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				44DA76BF278753EF0003E8FC /* PBXTargetDependency */,
 			);
 			name = "Book App Demo";
 			productName = "Book App Demo";
@@ -218,6 +255,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44DA76BF278753EF0003E8FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449B614027856EEA009F4618 /* BookApps */;
+			targetProxy = 44DA76BE278753EF0003E8FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		449B614827856EEA009F4618 /* Debug */ = {

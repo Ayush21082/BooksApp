@@ -9,16 +9,34 @@
 /* Begin PBXBuildFile section */
 		449B614627856EEA009F4618 /* BookApps.docc in Sources */ = {isa = PBXBuildFile; fileRef = 449B614527856EEA009F4618 /* BookApps.docc */; };
 		449B614727856EEA009F4618 /* BookApps.h in Headers */ = {isa = PBXBuildFile; fileRef = 449B614427856EEA009F4618 /* BookApps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449B614E27856F18009F4618 /* BookAppsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B614D27856F18009F4618 /* BookAppsAPI.swift */; };
+		44DA76B0278752170003E8FC /* Book_App_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA76AF278752170003E8FC /* Book_App_DemoApp.swift */; };
+		44DA76B2278752170003E8FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA76B1278752170003E8FC /* ContentView.swift */; };
+		44DA76B42787521C0003E8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DA76B32787521C0003E8FC /* Assets.xcassets */; };
+		44DA76B72787521C0003E8FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DA76B62787521C0003E8FC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		449B614127856EEA009F4618 /* BookApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449B614427856EEA009F4618 /* BookApps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookApps.h; sourceTree = "<group>"; };
 		449B614527856EEA009F4618 /* BookApps.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BookApps.docc; sourceTree = "<group>"; };
+		449B614D27856F18009F4618 /* BookAppsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppsAPI.swift; sourceTree = "<group>"; };
+		44DA76AD278752160003E8FC /* Book App Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book App Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DA76AF278752170003E8FC /* Book_App_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_App_DemoApp.swift; sourceTree = "<group>"; };
+		44DA76B1278752170003E8FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44DA76B32787521C0003E8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44DA76B62787521C0003E8FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		449B613E27856EEA009F4618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DA76AA278752160003E8FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				449B614327856EEA009F4618 /* BookApps */,
+				44DA76AE278752160003E8FC /* Book App Demo */,
 				449B614227856EEA009F4618 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				449B614127856EEA009F4618 /* BookApps.framework */,
+				44DA76AD278752160003E8FC /* Book App Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +68,29 @@
 			isa = PBXGroup;
 			children = (
 				449B614427856EEA009F4618 /* BookApps.h */,
+				449B614D27856F18009F4618 /* BookAppsAPI.swift */,
 				449B614527856EEA009F4618 /* BookApps.docc */,
 			);
 			path = BookApps;
+			sourceTree = "<group>";
+		};
+		44DA76AE278752160003E8FC /* Book App Demo */ = {
+			isa = PBXGroup;
+			children = (
+				44DA76AF278752170003E8FC /* Book_App_DemoApp.swift */,
+				44DA76B1278752170003E8FC /* ContentView.swift */,
+				44DA76B32787521C0003E8FC /* Assets.xcassets */,
+				44DA76B52787521C0003E8FC /* Preview Content */,
+			);
+			path = "Book App Demo";
+			sourceTree = "<group>";
+		};
+		44DA76B52787521C0003E8FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44DA76B62787521C0003E8FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +125,23 @@
 			productReference = 449B614127856EEA009F4618 /* BookApps.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		44DA76AC278752160003E8FC /* Book App Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DA76B82787521C0003E8FC /* Build configuration list for PBXNativeTarget "Book App Demo" */;
+			buildPhases = (
+				44DA76A9278752160003E8FC /* Sources */,
+				44DA76AA278752160003E8FC /* Frameworks */,
+				44DA76AB278752160003E8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Book App Demo";
+			productName = "Book App Demo";
+			productReference = 44DA76AD278752160003E8FC /* Book App Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,9 +149,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					449B614027856EEA009F4618 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					44DA76AC278752160003E8FC = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -113,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				449B614027856EEA009F4618 /* BookApps */,
+				44DA76AC278752160003E8FC /* Book App Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +187,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44DA76AB278752160003E8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DA76B72787521C0003E8FC /* Preview Assets.xcassets in Resources */,
+				44DA76B42787521C0003E8FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -133,6 +204,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				449B614627856EEA009F4618 /* BookApps.docc in Sources */,
+				449B614E27856F18009F4618 /* BookAppsAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DA76A9278752160003E8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DA76B2278752170003E8FC /* ContentView.swift in Sources */,
+				44DA76B0278752170003E8FC /* Book_App_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +355,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +384,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +394,64 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sage.BookApps;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44DA76B92787521C0003E8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Book App Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4E33XWS7UW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sage.Book-App-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44DA76BA2787521C0003E8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Book App Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4E33XWS7UW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sage.Book-App-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +475,15 @@
 			buildConfigurations = (
 				449B614B27856EEA009F4618 /* Debug */,
 				449B614C27856EEA009F4618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44DA76B82787521C0003E8FC /* Build configuration list for PBXNativeTarget "Book App Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DA76B92787521C0003E8FC /* Debug */,
+				44DA76BA2787521C0003E8FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,6 +13,8 @@ pod 'BookAppsLib'
 
 ## Usage
 
+* Run Book App Demo for the result
+
 Example
 
   ``` swift
@@ -31,6 +33,10 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
   ```
+  
+  ## Screenshot
+  
+  <img src="https://github.com/Ayush21082/BooksApp/blob/main/Book%20App%20Demo/Screenshots/1.png" height=800>
   
   ## 📄 License
 

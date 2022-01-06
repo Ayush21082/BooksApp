@@ -17,7 +17,7 @@ Example
 
   ``` swift
  import SwiftUI
- import BookAppsAPI
+ import BookApps
 
 struct ContentView: View {
     var body: some View {
